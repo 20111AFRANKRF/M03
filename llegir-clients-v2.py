@@ -37,7 +37,7 @@ sortir = False
 while sortir == False:	
 	
 	os.system('clear')
-	print "OPCIONS \n 1- Llegir taula 'clientes': \n 0- Sortir \n"
+	print "OPCIONS \n 1- Escogir taula \n 0- Sortir \n"
 
 	opcio = raw_input('Escull una opció [0-1]: ')
 	
@@ -64,24 +64,27 @@ while sortir == False:
 				cur.execute(sql);
 				rows = cur.fetchall()
 				
-					if nombretabla == 'pedidos'
+				os.system('clear')
 				
-					os.system('clear')
+				if nombretabla == 'pedidos':
 				
-						print "num_pedido  fecha_pedido clie    rep   fab   producto  cant  importe  "
+					print "num_pedido  fecha_pedido clie    rep   fab   producto  cant  importe  "
 
-						for row in rows:
+					for row in rows:
 						#print row[0],row[1],row[2],row[3]
 						print(" {:^10} {} {:^8} {:^5} {:^5} {:^10} {:^5} {:^10} ".format(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
 				
-							tecla = raw_input('Prem una tecla per continuar')
+					tecla = raw_input('Prem una tecla per continuar')
 				
-					if nombretabla == 'clientes'
+				if nombretabla == 'clientes':
 				
-						print "num_clie       empresa       rep_clie  limite_credito"
+					print "num_clie         empresa      rep_clie  limite_credito"
 				
-						for row in rows:
-						print(" {:^10} {:^20} {:^6} {:^10} ".format(row[0], row[1], row[2], row[3], row[4]))
+					for row in rows:
+						print(" {:^10} {:^20} {:^6} {:^10} ".format(row[0], row[1], row[2], row[3]))
+					
+					tecla = raw_input('Prem una tecla per continuar')
+
 		
 		except psycopg2.Error as er :
 			print "-------- ERROR:", er.pgcode, " -------- \n"
