@@ -26,35 +26,37 @@ numero=input("Que desea hacer el amo?: ")
 
 os.system('clear')
 
-if numero == 1:
-	print "Introduce dos numeros:"
-	x=input("numero 1: ")
-	y=input("numero 2: ")
-	os.system('clear')
-	print "La suma es: ", x+y
-	numero=input("Que desea hacer el amo?: ")
+while (numero >0 and numero <= 4):
+	
+	if numero == 1:
+		print "Introduce dos numeros:"
+		x=input("numero 1: ")
+		y=input("numero 2: ")
+		os.system('clear')
+		print "La suma es: ", x+y
+		numero=input("Que desea hacer el amo?: ")
 
-elif numero == 2:
-	x=input("numero 1: ")
-	y=input("numero 2: ")
-	os.system('clear')
-	print "La resta es: ", x-y
-	numero=input("Que desea hacer el amo?: ")
+	elif numero == 2:
+		x=input("numero 1: ")
+		y=input("numero 2: ")
+		os.system('clear')
+		print "La resta es: ", x-y
+		numero=input("Que desea hacer el amo?: ")
 
-elif numero == 3:
-	x=input("numero 1: ")
-	y=input("numero 2: ")
-	os.system('clear')
-	print "La multiplicació es: ", x*y
-	numero=input("Que desea hacer el amo?: ")
+	elif numero == 3:
+		x=input("numero 1: ")
+		y=input("numero 2: ")
+		os.system('clear')
+		print "La multiplicació es: ", x*y
+		numero=input("Que desea hacer el amo?: ")
 
-elif numero == 4:
-	x=input("numero 1: ")
-	y=input("numero 2: ")
-	os.system('clear')
-	print "La divisió es: ", x/y
-	numero=input("Que desea hacer el amo?: ")
+	elif numero == 4:
+		x=input("numero 1: ")
+		y=input("numero 2: ")
+		os.system('clear')
+		print "La divisió es: ", x/y
+		numero=input("Que desea hacer el amo?: ")
 
-elif numero ==5:
-    print "ADIOS!"
+	elif numero ==5:
+		print "ADIOS!"
 
