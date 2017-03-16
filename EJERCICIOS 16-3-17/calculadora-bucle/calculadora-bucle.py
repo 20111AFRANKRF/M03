@@ -13,6 +13,8 @@ Nota: si el usuario elige un número que no está entre 1 y 5->Error “Esa opci
 """
 import os
 
+os.system('clear')
+
 sortir=False
 
 while sortir==False:  
