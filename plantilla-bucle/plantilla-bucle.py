@@ -1,6 +1,8 @@
 #!/bin/python
 # -*-coding: utf-8-*-
 
+salir=False
+
 while (salir == False):
 	print "hola"
 	tecla=input("")
