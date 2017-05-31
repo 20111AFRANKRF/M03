@@ -3,7 +3,7 @@
 import os
 import stat
 
-path_to_explore=./test/
+path_to_explore="./test/"
 
 #Fem una busqueda a tota la estructura dins de /test
 
